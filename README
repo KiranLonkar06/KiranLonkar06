@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+        padding: 0 20px;
+      }
+      nav .left {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(152, 152, 240);
+        font-size: 1.04rem;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: white;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 10%;
+      }
+      .leftSection {
+        font-size: 2rem;
+      }
+      .leftSection .purple {
+        color: rgb(183, 120, 241);
+        font-weight: bold;
+      }
+      .leftSection #element {
+        display: block;
+        margin-top: 15px;
+        font-size: 1.5rem;
+        color: rgb(183, 120, 241);
+      }
+      .rightSection img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: 40px auto;
+      }
+      .secondsection h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .secondsection .text-grey {
+        color: grey;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .work-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .work-box {
+        background-color: rgb(18, 18, 62);
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .work-box:hover {
+        transform: scale(1.05);
+      }
+      .work-box h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: rgb(183, 120, 241);
+      }
+      .work-box p {
+        font-size: 1rem;
+        color: rgb(200, 200, 255);
+      }
+      footer {
+        background-color: rgb(18, 18, 62);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+      }
+      .footer-link {
+        color: rgb(183, 120, 241);
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.3s;
+      }
+      .footer-link:hover {
+        color: rgb(255, 255, 255);
+      }
+      .footer-link i {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kiran's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is<span class="purple"> Kiran</span>
+          <div>and I am an Aspiring Software Engineer</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="Profile Background" />
+        </div>
+      </section>
+      <section class="secondsection">
+        <span class="text-grey">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="work-container">
+          <div class="work-box">
+            <h3>Web Development</h3>
+            <p>
+              Developed responsive websites using HTML, CSS, and JavaScript.
+              Skilled in frameworks like React and libraries like Bootstrap.
+            </p>
+          </div>
+          <div class="work-box">
+            <h3>Data Structures</h3>
+            <p>
+              Proficient in solving problems using arrays, linked lists, trees,
+              and graphs. Strong grasp of algorithms and time complexity.
+            </p>
+          </div>
+          <div class="work-box">
+            <h3>Cryptography</h3>
+            <p>
+              Familiar with modern encryption algorithms like AES and RSA.
+              Understanding of secure communication protocols.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <a
+          href="https://www.linkedin.com/in/kiran-lonkar-047542308"
+          target="_blank"
+          class="footer-link"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:kiranlonkar73@gmail.com" class="footer-link">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Data Science Enthusiast",
+          "Problem-solving Skills",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
